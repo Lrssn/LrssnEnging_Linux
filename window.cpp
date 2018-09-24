@@ -2,11 +2,11 @@
 
 void window_resize(GLFWwindow *window, int width, int height);
 
-Window::Window(int width, int height, const char *title, Camera *camera, Controller *controller){
+Window::Window(int width, int height, const char *title, Player *player, Controller *controller){
 	m_Width = width;
 	m_Height = height;
 	m_Title = title;
-	m_Camera = camera;
+	m_Player = player;
 	m_Controller = controller;
 	init();
 	screenshotNr = 0;
@@ -154,7 +154,7 @@ void Window::update() {
 void Window::renderSkybox(Shader skyboxShader, glm::mat4 projection, glm::mat4 view){
 	skyboxShader.Use();
 	glDepthFunc(GL_LEQUAL);
-	view = glm::mat4(glm::mat3(this->m_Camera->GetViewMatrix())); //zero view
+	view = glm::mat4(glm::mat3(this->m_Player->getCamera()->GetViewMatrix())); //zero view
 	glUniformMatrix4fv(glGetUniformLocation(skyboxShader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
 	glUniformMatrix4fv(glGetUniformLocation(skyboxShader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
 	glBindVertexArray(skyboxVAO);

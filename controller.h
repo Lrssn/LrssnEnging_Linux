@@ -2,7 +2,6 @@
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#include "camera.h"
 #include "player.h"
 
 enum Game_Type{
@@ -14,7 +13,7 @@ enum Game_Type{
 
 class Controller{
 public:
-    Controller(Camera *_camera, Player *_player, Game_Type _gt);
+    Controller(Player *_player, Game_Type _gt);
     void setKeys(bool _keys[MAX_KEYS]);
     void doMovement(GLfloat deltaTime);
     void changeGameType(Game_Type _gt);

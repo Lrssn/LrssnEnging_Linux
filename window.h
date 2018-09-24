@@ -9,7 +9,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-#include "camera.h"
+#include "player.h"
 #include "texture.h"
 #include "shader.h"
 #include "controller.h"
@@ -22,7 +22,7 @@
 class Window
 {
 public:
-	Window(int width, int height, const char *title, Camera *camera, Controller *controller);
+	Window(int width, int height, const char *title, Player *player, Controller *controller);
 	~Window();
 	void clear() const;
 	void update();
@@ -42,7 +42,7 @@ private:
 	int m_Width, m_Height, screenshotNr;
 	const char *m_Title;
 	GLFWwindow *m_Window;
-	Camera *m_Camera;
+	Player *m_Player;
 	Controller *m_Controller;
 	GLfloat deltaTime = 0.0f;
 	GLfloat lastFrame = 0.0f;

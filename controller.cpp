@@ -1,7 +1,7 @@
 #include "controller.h"
-Controller::Controller(Camera *_camera, Player *_player, Game_Type _gt) {
-    this->camera = _camera;
+Controller::Controller(Player *_player, Game_Type _gt) {
     this->player = _player;
+	this->camera = player ->getCamera();
     this->currentGT = _gt;
 }
 

@@ -1,7 +1,7 @@
 #include "player.h"
 
 Player::Player(){
-
+	std::cout << "hello" << std::endl;
 }
 
 Player::~Player(){
@@ -30,6 +30,7 @@ void Player::ProcessKeyboard(Player_Movement direction, GLfloat deltaTime) {
 		this->pos -= this->right*velocity;
 		//std::cout << "xpos is:" << this->position.x << "   ypos is:" << this->position.y << "   zpos is:" << this->position.z << std::endl;
 	}
+	processPlayerTransforms();
 
 }
 
@@ -50,4 +51,18 @@ void Player::setRotation(float _angle) {
 }
 float Player::getRotation() {
 	return this->rotation;
+}
+
+void Player::processPlayerTransforms() {
+	playermodel.setPosition(this->pos-glm::vec3(0.0f, 2.0f, 0.0f));
+	playermodel.setRotation(this->rotation, glm::vec3(0.0f, -1.0f, 0.0f));
+
+}
+
+Camera* Player::getCamera() {
+	return &cam;
+}
+
+Model* Player::getModel(){
+	return &playermodel;
 }

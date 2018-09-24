@@ -32,5 +32,10 @@ output
 *.out
 *.app
 
+#cmake folder
+cmake-build-debug
+.idea
+
+
 # Dont ignore these
 !/res/models/*/*.obj
