@@ -19,6 +19,7 @@ public:
 
 	void setUp(glm::vec3 _up);
 	Camera* getCamera();
+	void setModel(Model* _model);
 	void setRight(glm::vec3 _right);
 	void setRotation(float _angle);
 	void ProcessKeyboard(Player_Movement direction, GLfloat deltaTime);
@@ -31,8 +32,9 @@ private:
 	glm::vec3 front = glm::vec3(0.0f, 0.0f, 1.0f);
 	glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f);
 	glm::vec3 right = glm::vec3(1.0f, 0.0f, 0.0f);
-	glm::vec3 worldUp = glm::vec3(0.0f, 1.0f, 0.0f);;
+	glm::vec3 worldUp = glm::vec3(0.0f, 1.0f, 0.0f);
+
 	Camera cam = Camera(pos);
-	Model playermodel = Model("res/models/nano/nanosuit.obj", glm::vec3(0.0f, 0.0f, 0.0f),glm::vec3(0.2f, 0.2f, 0.2f));
+	Model* playermodel;
 	float movementSpeed = 6.0;
 };

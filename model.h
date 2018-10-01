@@ -4,6 +4,7 @@
 #include <sstream>
 #include <iostream>
 #include <map>
+#include <cmath>
 #include <vector>
 #include <GL/glew.h>
 #include <glm/glm.hpp>
@@ -34,22 +35,27 @@ public:
 	void initScale(glm::vec3 scl);
 	void setScale(glm::vec3 scl);
 	void setVisible();
+	void checkBounds();
+	glm::vec3 getCenter();
+	void Collision(std::vector<Model>* _m);
+	bool inCollider(int _i);
 
 private:
 	std::string directory;
 	std::vector<Mesh> meshes;
 	std::vector<Texture> textures_loaded;
 	glm::mat4 modelMatrix;
-	glm::vec3 position, rotation, scale;
+	glm::vec3 position, rotation, scale, centerPoint;
 	float rotAngle;
 	bool isVisible;
+	std::vector<int> hasCollided;
 
 	void updatePosition();
 	void updateRotation();
 	void updateScale();
-
+	float maxX = -100000, maxY = -100000, maxZ = -100000, minX = 100000, minY = 100000, minZ = 100000;
 	void loadModel(std::string path);
-
+	void calculateBoundingBox(glm::vec3 _v);
 	void processNode(aiNode *node, const aiScene *scene);
 
 	Mesh processMesh(aiMesh *mesh, const aiScene *scene);

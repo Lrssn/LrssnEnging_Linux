@@ -90,13 +90,14 @@ void Model::initScale(glm::vec3 scl)
 	this->scale = scl;
 }
 
-void Model::setPosition(glm::vec3 pos)
-{
+void Model::setPosition(glm::vec3 pos){
 	this->position = pos;
+	this->centerPoint.x = pos.x + (maxX-minX);
+	this->centerPoint.y = pos.y + (maxY-minY);
+	this->centerPoint.z = pos.z + (maxZ-minZ);
 }
 
-void Model::setRotation(float ang,glm::vec3 rot)
-{
+void Model::setRotation(float ang,glm::vec3 rot){
 	this->rotAngle = ang;
 	this->rotation = rot;
 }
@@ -105,24 +106,25 @@ void Model::setScale(glm::vec3 scl){
 	this->scale = scl;
 }
 
-void Model::updatePosition()
-{
+void Model::updatePosition(){
 	this->modelMatrix = glm::translate(this->modelMatrix, position);
 }
 
-void Model::updateRotation()
-{
+void Model::updateRotation(){
 	this->modelMatrix = glm::rotate(modelMatrix, rotAngle, rotation);
 }
 
-void Model::updateScale()
-{
+void Model::updateScale() {
 	this->modelMatrix = glm::scale(this->modelMatrix, scale);
-
 }
 
-void Model::setVisible()
-{
+void Model::checkBounds(){
+	std::cout << "X-bounds are " << minX << ", " << maxX << std::endl;
+	std::cout << "Y-bounds are " << minY << ", " << maxY << std::endl;
+	std::cout << "Z-bounds are " << minZ << ", " << maxZ << std::endl;
+}
+
+void Model::setVisible(){
 	this->isVisible = !this->isVisible;
 }
 
@@ -163,6 +165,9 @@ void Model::loadModel(std::string path) {
 	this->directory = path.substr(0, path.find_last_of('/'));
 
 	this->processNode(scene->mRootNode, scene);
+	this->centerPoint.x = maxX-minX;
+	this->centerPoint.y = maxY-minY;
+	this->centerPoint.z = maxZ-minZ;
 }
 
 void Model::processNode(aiNode *node, const aiScene *scene) {
@@ -188,6 +193,7 @@ Mesh Model::processMesh(aiMesh *mesh, const aiScene *scene) {
 		vector.x = mesh->mVertices[i].x;
 		vector.y = mesh->mVertices[i].y;
 		vector.z = mesh->mVertices[i].z;
+		calculateBoundingBox(vector);
 		vertex.Position = vector;
 
 		vector.x = mesh->mNormals[i].x;
@@ -208,7 +214,6 @@ Mesh Model::processMesh(aiMesh *mesh, const aiScene *scene) {
 
 		vertices.push_back(vertex);
 	}
-
 	for (GLuint i = 0; i < mesh->mNumFaces; i++) {
 		aiFace face = mesh->mFaces[i];
 
@@ -257,4 +262,51 @@ std::vector<Texture> Model::loadMaterialTextures(aiMaterial *mat, aiTextureType 
 		}
 	}
 	return textures;
+}
+
+void Model::Collision(std::vector<Model>* _m){
+	for(int i = 0; i < _m->size(); i++) {
+		if ((sqrt(pow(abs(this->centerPoint.x - _m->at(i).getCenter().x), 2) +
+				  pow(abs(this->centerPoint.y - _m->at(i).getCenter().y), 2) +
+				  pow(abs(this->centerPoint.z - _m->at(i).getCenter().z), 2)) < 2) && !inCollider(i)) {
+			std::cout << "Collision Detected with object " << i << std::endl;
+			hasCollided.push_back(i);
+		} else if (!(sqrt(pow(abs(this->centerPoint.x - _m->at(i).getCenter().x), 2) +
+						  pow(abs(this->centerPoint.y - _m->at(i).getCenter().y), 2) +
+						  pow(abs(this->centerPoint.z - _m->at(i).getCenter().z), 2)) < 2) && inCollider(i)) {
+			std::cout << "stopped colliding with object " << i << std::endl;
+			for(int j = 0; j < hasCollided.size(); j++){
+				if(hasCollided.at(j) == i){
+					hasCollided.erase(hasCollided.begin()+j);
+				}
+			}
+		}
+	}
+}
+bool Model::inCollider(int _i){
+	return std::find(hasCollided.begin(), hasCollided.end(), _i) != hasCollided.end();
+}
+void Model::calculateBoundingBox(glm::vec3 _v){
+	if(_v.x > this->maxX){
+		this->maxX = _v.x;
+	}
+	if(_v.x < this->minX){
+		this->minX = _v.x;
+	}
+	if(_v.y > this->maxY){
+		this->maxY = _v.y;
+	}
+	if(_v.y < this->minY){
+		this->minY = _v.y;
+	}
+	if(_v.z > this->maxZ){
+		this->maxZ = _v.z;
+	}
+	if(_v.x < this->minZ){
+		this->minZ = _v.z;
+	}
+}
+
+glm::vec3 Model::getCenter(){
+	return this->centerPoint;
 }

@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
 	//Camera camera(glm::vec3(0.0f, 2.0f, 3.0f));
 
 	Player player1 = Player();
-	Controller controller(&player1, RTS);
+	Controller controller(&player1, FPS);
 	Window window(width, height, "Lrssn!", &player1, &controller);
 	double lastFrame = 0.0f, deltaTime = 0.0f, x, y;
 	//print windowsize
@@ -34,8 +34,8 @@ int main(int argc, char** argv) {
 	// 1 = testscene with floor and walls
 	TerrainCreator tC(1);
 	//Model playerModel("res/models/nano/nanosuit.obj");
-	//player1.setModel(&playerModel);
-	//playerModel.initScale(glm::vec3(0.2f, 0.2f, 0.2f));
+	Model playerModel((char*)("res/models/cube/cube.obj"));
+	player1.setModel(&playerModel);
 	//load models
 	std::vector<Model> terrain;
 
@@ -58,6 +58,8 @@ int main(int argc, char** argv) {
 		GLfloat currentFrame = (GLfloat)glfwGetTime();
 		deltaTime = currentFrame - lastFrame;
 		lastFrame = currentFrame;
+		//calculate collision
+		player1.getModel()->Collision(&terrain);
 
 		//clear window
 		window.clear();

@@ -183,6 +183,9 @@ void Window::key_callback(GLFWwindow *window, int key, int scancode, int action,
 	if (GLFW_KEY_P == key && GLFW_RELEASE == action) {
 		win->RenderToFile();
 	}
+	if (GLFW_KEY_O == key && GLFW_RELEASE == action) {
+		win->m_Player->getModel()->checkBounds();
+	}
 
 	if (key >= 0 && key < MAX_KEYS){
 		if (action == GLFW_PRESS){

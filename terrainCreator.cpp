@@ -21,12 +21,13 @@ std::vector<Model> TerrainCreator::getObjects(){
 
 void TerrainCreator::setTerrainObjects(){
   if(terrainSetup == 0){//JUST FLOOR
-    Model Ground("res/models/mountain/plane.obj");
+    Model Ground((char*)("res/models/mountain/plane.obj"));
     terrainObjects.push_back(Ground);
   }else if(terrainSetup == 1){ //TESTSCENE
-    Model Ground("res/models/mountain/plane.obj");
+    Model Ground((char*)("res/models/mountain/plane.obj") );
     terrainObjects.push_back(Ground);
-    Model cube1("res/models/cube/cube.obj", glm::vec3(1.0f, 0.5f, 2.0f));
+
+    Model cube1((char*)("res/models/cube/cube.obj"), glm::vec3(1.0f, 0.5f, 2.0f));
     terrainObjects.push_back(cube1);
     cube1.setScale(glm::vec3(10.0f, 10.0f, 1.0f));
     cube1.setPosition(glm::vec3(15.0f, 5.0f, 2.0f));

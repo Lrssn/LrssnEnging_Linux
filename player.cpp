@@ -34,6 +34,10 @@ void Player::ProcessKeyboard(Player_Movement direction, GLfloat deltaTime) {
 
 }
 
+void Player::setModel(Model *_model) {
+	this->playermodel = _model;
+}
+
 void Player::setFront(glm::vec3 _front) {
 	this->front = _front;
 	this->front.y = 0.0f;
@@ -54,8 +58,8 @@ float Player::getRotation() {
 }
 
 void Player::processPlayerTransforms() {
-	playermodel.setPosition(this->pos-glm::vec3(0.0f, 2.0f, 0.0f));
-	playermodel.setRotation(this->rotation, glm::vec3(0.0f, -1.0f, 0.0f));
+	playermodel->setPosition(this->pos-glm::vec3(0.0f, 2.0f, 0.0f));
+	playermodel->setRotation(this->rotation, glm::vec3(0.0f, -1.0f, 0.0f));
 
 }
 
@@ -64,5 +68,5 @@ Camera* Player::getCamera() {
 }
 
 Model* Player::getModel(){
-	return &playermodel;
+	return playermodel;
 }
