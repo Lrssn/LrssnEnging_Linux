@@ -123,6 +123,33 @@ OpenGL_Linux/fast:
 	$(MAKE) -f CMakeFiles/OpenGL_Linux.dir/build.make CMakeFiles/OpenGL_Linux.dir/build
 .PHONY : OpenGL_Linux/fast
 
+GameObjectContainer.o: GameObjectContainer.cpp.o
+
+.PHONY : GameObjectContainer.o
+
+# target to build an object file
+GameObjectContainer.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGL_Linux.dir/build.make CMakeFiles/OpenGL_Linux.dir/GameObjectContainer.cpp.o
+.PHONY : GameObjectContainer.cpp.o
+
+GameObjectContainer.i: GameObjectContainer.cpp.i
+
+.PHONY : GameObjectContainer.i
+
+# target to preprocess a source file
+GameObjectContainer.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGL_Linux.dir/build.make CMakeFiles/OpenGL_Linux.dir/GameObjectContainer.cpp.i
+.PHONY : GameObjectContainer.cpp.i
+
+GameObjectContainer.s: GameObjectContainer.cpp.s
+
+.PHONY : GameObjectContainer.s
+
+# target to generate assembly for a file
+GameObjectContainer.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGL_Linux.dir/build.make CMakeFiles/OpenGL_Linux.dir/GameObjectContainer.cpp.s
+.PHONY : GameObjectContainer.cpp.s
+
 camera.o: camera.cpp.o
 
 .PHONY : camera.o
@@ -402,6 +429,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... OpenGL_Linux"
+	@echo "... GameObjectContainer.o"
+	@echo "... GameObjectContainer.i"
+	@echo "... GameObjectContainer.s"
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"

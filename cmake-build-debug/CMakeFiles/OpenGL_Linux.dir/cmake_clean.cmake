@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/OpenGL_Linux.dir/texture.cpp.o"
   "CMakeFiles/OpenGL_Linux.dir/window.cpp.o"
   "CMakeFiles/OpenGL_Linux.dir/controller.cpp.o"
+  "CMakeFiles/OpenGL_Linux.dir/GameObjectContainer.cpp.o"
   "OpenGL_Linux.pdb"
   "OpenGL_Linux"
 )

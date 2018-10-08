@@ -86,6 +86,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/GameObjectContainer.cpp">
+			<Option target="OpenGL_Linux"/>
+		</Unit>
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/GameObjectContainer.h">
+			<Option target="OpenGL_Linux"/>
+		</Unit>
 		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/camera.cpp">
 			<Option target="OpenGL_Linux"/>
 		</Unit>

@@ -22,4 +22,8 @@ add_executable(OpenGL_Linux
         texture.cpp
         texture.h
         window.cpp
-        window.h controller.cpp controller.h)
+        window.h
+		controller.cpp
+		controller.h
+		GameObjectContainer.cpp
+		GameObjectContainer.h)
