@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/erik/Documents/Github/OpenGL_Linux/. 
+CXX_INCLUDES = -I/home/erik/Documents/Github/LrssnEnging_Linux/. 
 

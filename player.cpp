@@ -1,7 +1,6 @@
 #include "player.h"
 
 Player::Player(){
-	std::cout << "hello" << std::endl;
 }
 
 Player::~Player(){

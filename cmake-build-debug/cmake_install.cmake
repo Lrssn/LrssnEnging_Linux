@@ -1,4 +1,4 @@
-# Install script for directory: /home/erik/Documents/Github/OpenGL_Linux
+# Install script for directory: /home/erik/Documents/Github/LrssnEnging_Linux
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

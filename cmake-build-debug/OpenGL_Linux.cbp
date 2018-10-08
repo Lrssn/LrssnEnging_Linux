@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug"/>
+				<Option working_dir="/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug"/>
+				<Option working_dir="/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug"/>
+				<Option working_dir="/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="OpenGL_Linux">
-				<Option output="/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/OpenGL_Linux" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug"/>
+				<Option output="/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/OpenGL_Linux" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/erik/Documents/Github/OpenGL_Linux/."/>
+					<Add directory="/home/erik/Documents/Github/LrssnEnging_Linux/."/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -55,20 +55,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 OpenGL_Linux"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 OpenGL_Linux"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="OpenGL_Linux/fast">
-				<Option output="/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/OpenGL_Linux" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug"/>
+				<Option output="/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/OpenGL_Linux" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/erik/Documents/Github/OpenGL_Linux/."/>
+					<Add directory="/home/erik/Documents/Github/LrssnEnging_Linux/."/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -79,71 +79,71 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 OpenGL_Linux/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/OpenGL_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 OpenGL_Linux/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/erik/Documents/Github/LrssnEnging_Linux/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/camera.cpp">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/camera.cpp">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/camera.h">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/camera.h">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/controller.cpp">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/controller.cpp">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/controller.h">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/controller.h">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/main.cpp">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/main.cpp">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/mesh.cpp">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/mesh.cpp">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/mesh.h">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/mesh.h">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/model.cpp">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/model.cpp">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/model.h">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/model.h">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/player.cpp">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/player.cpp">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/player.h">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/player.h">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/shader.cpp">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/shader.cpp">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/shader.h">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/shader.h">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/terrainCreator.cpp">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/terrainCreator.cpp">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/terrainCreator.h">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/terrainCreator.h">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/texture.cpp">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/texture.cpp">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/texture.h">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/texture.h">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/window.cpp">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/window.cpp">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/window.h">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/window.h">
 			<Option target="OpenGL_Linux"/>
 		</Unit>
-		<Unit filename="/home/erik/Documents/Github/OpenGL_Linux/CMakeLists.txt">
+		<Unit filename="/home/erik/Documents/Github/LrssnEnging_Linux/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
